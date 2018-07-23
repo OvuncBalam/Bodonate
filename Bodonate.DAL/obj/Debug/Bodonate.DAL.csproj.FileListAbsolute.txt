@@ -1,0 +1,15 @@
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\Bodonate.DAL.dll.config
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\Bodonate.DAL.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\Bodonate.DAL.pdb
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\Bodonate.Entity.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\Bodonate.Entity.pdb
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\Bodonate.Entity.dll.config
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\obj\Debug\Bodonate.DAL.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\obj\Debug\Bodonate.DAL.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\obj\Debug\Bodonate.DAL.csproj.CopyComplete
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\obj\Debug\Bodonate.DAL.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.DAL\obj\Debug\Bodonate.DAL.pdb

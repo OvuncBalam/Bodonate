@@ -1,0 +1,16 @@
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\Bodonate.Entity.dll.config
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\Bodonate.Entity.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\Bodonate.Entity.pdb
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.csproj.CopyComplete
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.dll
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.pdb
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.Migrations.InitialMigration.resources
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.Migrations.UserIdFixMigration.resources
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.Migrations.UserTransfersFixMigration.resources
