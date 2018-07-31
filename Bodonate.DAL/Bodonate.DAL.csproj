@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BooksRepo.cs" />
+    <Compile Include="Repositories\DonaterRepo.cs" />
+    <Compile Include="Repositories\GenreRepo.cs" />
+    <Compile Include="Repositories\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bodonate.Entity\Bodonate.Entity.csproj">

@@ -1,0 +1,49 @@
+﻿@model Bodonate.Web.Views.ViewModels.BodonateViewModel
+@{
+
+
+    ViewBag.Title = "Index";
+}
+
+<h2>Bodonate Anasayfa</h2>
+
+
+<table style="width:100%">
+    <tr>
+        <th>Kitap Adı</th>
+        <th>Kitap Yazarı</th>
+        <th>Tür</th>
+
+    </tr>
+    @foreach (var book in Model.Books)
+    {
+  
+        <tr>
+            <td>@book.Name</td>
+            <td>@book.Author</td>
+            <td>@book.Genre</td>
+        </tr>
+    }
+
+
+</table>
+<br />
+<table style="width:100%">
+    <tr>
+        <th>Bağışlayan Adı</th>
+
+
+    </tr>
+    @foreach (var donator in Model.Donators)
+    {
+        <tr>
+            <td>@donator.Name</td>
+
+
+        </tr>
+    }
+
+
+</table>
+
+
