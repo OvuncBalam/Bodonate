@@ -9,7 +9,7 @@ namespace Bodonate.Entity.DbContext
     {
        
         public BodonateDbContext()
-            : base("name=BodonateDbContext")
+            : base("name=BodonateDb")
         {
         }
 

@@ -16,5 +16,6 @@ namespace Bodonate.Web.Views.ViewModels
         public List<Book> Books { get; set; }
         public List<Donater> Donators { get; set; }
         public List<Genre> Genres { get; set; }
+        public List <User> Users { get; set; }
     }
 }

@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Bodonate Anasayfa</h2>
+<h2>Kitap Listesi</h2>
 
 
 <table style="width:100%">
@@ -17,12 +17,15 @@
     </tr>
     @foreach (var book in Model.Books)
     {
-  
-        <tr>
-            <td>@book.Name</td>
+    
+        <tr >
+
+            <td><a href="~/Bodonate/Update/@book.Id">@book.Name</a></td>
             <td>@book.Author</td>
             <td>@book.Genre</td>
         </tr>
+    
+        
     }
 
 
@@ -45,5 +48,4 @@
 
 
 </table>
-
 

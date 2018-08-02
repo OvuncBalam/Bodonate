@@ -51,6 +51,8 @@
     <Compile Include="Repositories\BooksRepo.cs" />
     <Compile Include="Repositories\DonaterRepo.cs" />
     <Compile Include="Repositories\GenreRepo.cs" />
+    <Compile Include="Repositories\RequesterRepo.cs" />
+    <Compile Include="Repositories\TransferRepo.cs" />
     <Compile Include="Repositories\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
