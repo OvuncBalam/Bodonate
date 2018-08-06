@@ -14,8 +14,11 @@ namespace Bodonate.Web.Controllers
     public class BodonateController : Controller
     {
         // GET: Books
-        public ActionResult Index()
+ 
+      
+        public ActionResult Index()   
         {
+
             var books = BooksRepo.GetAllBooks();
             var donators = DonaterRepo.GetAllDonaters();
             var genres = GenreRepo.GetAllGenres();
@@ -28,9 +31,13 @@ namespace Bodonate.Web.Controllers
                 Genres = genres,
                 Users = users
             };
+            
 
 
-            return View(BodobateViewModel);
+
+
+
+            return View();  //BodobateViewModel
         }
 
 
