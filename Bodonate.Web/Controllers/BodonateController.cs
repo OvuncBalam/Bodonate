@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using Bodonate.DAL.Repositories;
 using Bodonate.Entity.DbContext;
 using Bodonate.Entity.Models;
@@ -56,14 +57,14 @@ namespace Bodonate.Web.Controllers
                 if (book.Id == 0)
                 {
                     db.Books.Add(book);
-                   
+
                 }
                 else
                 {
 
                     book.Name = model.Name;
                     book.Author = model.Author;
-                  
+
 
                 }
                 db.SaveChanges();
@@ -91,7 +92,37 @@ namespace Bodonate.Web.Controllers
                 return View(model);
             }
         }
+        public ActionResult UserLogin()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult UserLogin(UserModel user, string returnUrl)
+        { using (BodonateDbContext db = new BodonateDbContext())
+            {
+                if (ModelState.IsValid)
+                {   var users= db.Users.ToList();
+                    foreach (var item in users)
+                    {
+
+                   
+                    if (user.Username.ToLower() == "" && user.Password == "123456")
+                    {
+                        FormsAuthentication.SetAuthCookie(user.Username, false);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Lütfen kullanıcı bilgilerinizi kontrol ediniz.");
+                    }
+
+                    }
+                }
+
+                return View(user);
+            }
+    }
     }
 }
 
