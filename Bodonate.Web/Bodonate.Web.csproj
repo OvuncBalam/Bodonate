@@ -134,6 +134,7 @@
     <Content Include="Views\Bodonate\NewBook.cshtml" />
     <Content Include="Views\Bodonate\Update.cshtml" />
     <Content Include="Views\Bodonate\UserLogin.cshtml" />
+    <Content Include="Views\Bodonate\UserRegister.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

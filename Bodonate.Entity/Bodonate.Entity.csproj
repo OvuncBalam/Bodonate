@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201807231827036_UserTransfersFixMigration.Designer.cs">
       <DependentUpon>201807231827036_UserTransfersFixMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808070842169_emailpropadd.cs" />
+    <Compile Include="Migrations\201808070842169_emailpropadd.Designer.cs">
+      <DependentUpon>201808070842169_emailpropadd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Donater.cs" />
@@ -80,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807231827036_UserTransfersFixMigration.resx">
       <DependentUpon>201807231827036_UserTransfersFixMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808070842169_emailpropadd.resx">
+      <DependentUpon>201808070842169_emailpropadd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

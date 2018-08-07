@@ -50,6 +50,7 @@ namespace Bodonate.DAL.Repositories
                 UserToBeUpdated.Password = User.Password;
                 UserToBeUpdated.Username = User.Username;
                 UserToBeUpdated.Transfers = User.Transfers;
+                UserToBeUpdated.Confirmpassword = User.Email;
                 db.SaveChanges();
 
             }

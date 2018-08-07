@@ -5,51 +5,8 @@
     ViewBag.Title = "Index";
     Layout = null;
 }
-<<<<<<< HEAD
-
-<h2>Kitap Listesi</h2>
 
 
-<table style="width:100%">
-    <tr>
-        <th>Kitap Adı</th>
-        <th>Kitap Yazarı</th>
-        <th>Tür</th>
-
-    </tr>
-    @foreach (var book in Model.Books)
-    {
-    
-        <tr >
-
-            <td><a href="~/Bodonate/Update/@book.Id">@book.Name</a></td>
-            <td>@book.Author</td>
-            <td>@book.Genre</td>
-        </tr>
-    
-        
-    }
-
-
-</table>
-<br />
-<table style="width:100%">
-    <tr>
-        <th>Bağışlayan Adı</th>
-
-
-    </tr>
-    @foreach (var donator in Model.Donators)
-    {
-        <tr>
-            <td>@donator.Name</td>
-
-
-        </tr>
-    }
-
-
-</table>
 
 =======
 <h2 class="h1">Bodonate Anasayfa</h2>
@@ -108,4 +65,4 @@
     </div>
 </div>
 <p>&copy; 2018 Bodonate<p>
->>>>>>> a374df6380658c85472830311c014b2431145c3e
+

@@ -11,11 +11,11 @@ namespace Bodonate.Web.Views.ViewModels
     {
         public string Name { get; set; }
         public string SurName { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Geçersiz kullanıcı adı")]    
         [Display(Name = "Kullanıcı Adı")]
         [StringLength(20, ErrorMessage = "{0} en az {2} karakter olmalıdır.", MinimumLength = 4)]
         public string Username { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Geçersiz Şifre")]
         [Display(Name = "Şifre")]
         [StringLength(20, ErrorMessage = "{0} en az {2} karakter olmalıdır.", MinimumLength = 6)]
         [DataType(DataType.Password)]
@@ -23,5 +23,6 @@ namespace Bodonate.Web.Views.ViewModels
         public string Confirmpassword { get; set; }
 
         public List<Transfer> Transfers { get; set; }
+        public string Email { get; set; }
     }
 }
