@@ -14,31 +14,14 @@ namespace Bodonate.Web.Controllers
     public class BodonateController : Controller
     {
         // GET: Books
- 
-      
-        public ActionResult Index()   
+
+
+        public ActionResult Index()
+
         {
-
-            var books = BooksRepo.GetAllBooks();
-            var donators = DonaterRepo.GetAllDonaters();
-            var genres = GenreRepo.GetAllGenres();
-            var users = UserRepo.GetAllUsers();
-
-            var BodobateViewModel = new BodonateViewModel()
-            {
-                Books = books,
-                Donators = donators,
-                Genres = genres,
-                Users = users
-            };
-            
-
-
-
-
-
-            return View(BodobateViewModel);  //BodobateViewModel
+         return View();
         }
+
 
 
         public ActionResult NewBook()
@@ -105,53 +88,66 @@ namespace Bodonate.Web.Controllers
         }
 
         [HttpPost]
+
+
+
         public ActionResult UserLogin(UserModel user)
+
         {
             using (BodonateDbContext db = new BodonateDbContext())
             {
                 if (ModelState.IsValid)
                 {
+
                     var userInDb = db.Users.FirstOrDefault(u => u.Username == user.Username && u.Password == user.Password);
                     if (userInDb != null)
                     {
                         return RedirectToAction("Index");
                     }
-                   
-                    return RedirectToAction("UserLogin");
 
-                };
+                        else
+                        {
+                            ModelState.AddModelError("", "Lütfen kullanıcı bilgilerinizi kontrol ediniz.");
+                        }
 
-                return View("UserLogin");
 
+                    };
+
+                    return View("UserLogin");
+
+                }
             }
-        }
-        public ActionResult UserRegister()
-        {
-            return View();
-        }
 
         [HttpPost]
         public ActionResult UserRegister(UserModel user)
         {
             var UserRegistered = new User()
             {
-                Name=user.Name,
-                SurName=user.SurName,
-                Transfers=user.Transfers,
-                Username=user.Username,
-                Password=user.Password,
-                Email=user.Email
+                Name = user.Name,
+                SurName = user.SurName,
+                Transfers = user.Transfers,
+                Username = user.Username,
+                Password = user.Password,
+                Email = user.Email
 
-                
+
             };
             UserRepo.AddUser(UserRegistered);
 
-            using (BodonateDbContext db = new BodonateDbContext())
-            {
-                return View("Index");
+            return RedirectToAction("Index");
 
-            }
         }
     }
+
+
+   
+
 }
+
+
+
+
+
+    
+
 

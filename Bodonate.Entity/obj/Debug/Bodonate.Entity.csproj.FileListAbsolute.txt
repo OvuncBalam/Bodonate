@@ -31,3 +31,5 @@ C:\Users\msoft2275\Desktop\b\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.
 C:\Users\msoft2275\Desktop\b\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.dll
 C:\Users\msoft2275\Desktop\b\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.pdb
 C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.Migrations.emailpropadd.resources
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.Migrations.MessageprobAdded.resources
+C:\Users\LENOVO\source\repos\Bodonate\Bodonate.Entity\obj\Debug\Bodonate.Entity.Migrations.clearjunkdata.resources

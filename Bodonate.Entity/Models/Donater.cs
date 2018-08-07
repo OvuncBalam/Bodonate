@@ -10,8 +10,8 @@ namespace Bodonate.Entity.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
         public User UserDonating { get; set; }
         public int UserId { get; set; }
+        public string Message;
     }
 }

@@ -1,44 +1,43 @@
-﻿@model Bodonate.Web.Views.ViewModels.BodonateViewModel
+﻿@model   Bodonate.Web.Views.ViewModels.BodonateViewModel
 @{
 
 
     ViewBag.Title = "Index";
     Layout = null;
 }
-
-
-
-=======
 <h2 class="h1">Bodonate Anasayfa</h2>
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="~/Scripts/bootstrap.min.js"></script>
-<script src="~/Scripts/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-            <div id="imaginary_container">
-                <div class="input-group stylish-input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <div style="width:100%; height:120%;  float: left;    ">
 
 
 
     <div style="display:inline-block; float: left;  width:70%; height:80%; border-style:solid; border:solid; border-color:white; border-right-color:deepskyblue; ">
+
+
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/jquery-1.11.1.min.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div style="display :inline-block; ">
             <div style="display :inline-block;  ">
                 <img src="https://c1.staticflickr.com/9/8078/8314929977_28fd740070_b.jpg" style=" width:52%; height:65%; display:inline-block; margin-left:1%; margin-right:1%; margin-top:2%;" />
-                <img id="statistics" style=" width:37%; height:65%; display:inline-block;  margin-top:2%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO5K-ikyyn9wxjFF77i1HXSoW_hKpQL-03wScJj7_oHx48N_Q" />
+                <img id="statistics" style=" width:43%; height:65%; display:inline-block;  margin-top:2%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO5K-ikyyn9wxjFF77i1HXSoW_hKpQL-03wScJj7_oHx48N_Q" />
             </div>
             <div style="display :inline-block;  ">
                 <div style="display :inline-block; width:20%; height:20%; margin-left:3%; margin-right:3% ">Who we are ?</div>
@@ -49,10 +48,15 @@
     </div>
 
     <div style="display:inline-block; float: left;  width:25%; height:80%; margin-left:2%;">
-        <div  style="display:block;">
-            <div style="width:10%; height:5%; float: left; display:inline-block; margin-top:9%; margin-left:50%;">number</div>
-            <img style="width:10%; height:5%; display:inline-block; margin-top:7%; margin-left:6%;" src="~/Scripts/img/email.png" />
-            <img id="Login" style="width:10%; height:5%; display:inline-block; margin-top:7%; margin-left:3%;" src="~/Scripts/img/user.png" />
+        <div style="display:block;">
+            <div style="width:3%; height:5%; float: left; display:inline-block; margin-top:5%; margin-left:35%;">1</div>
+            <img style="width:10%; height:5%; display:inline-block; margin-top:5%; margin-left:1%;" src="~/Scripts/img/email.png" />
+            <img id="Login" style="width:10%; height:5%; display:inline-block; margin-top:3%; margin-left:1%;" src="~/Scripts/img/user.png" />
+
+            <div style="width:10%; height:5%; display:inline-block; margin-top:5%; margin-left:5%;">@Html.ActionLink("Login", "UserLogin", "Bodonate", new {}, null)</div>
+
+
+
         </div>
         <div style="display:block;">
 
@@ -64,5 +68,12 @@
         </div>
     </div>
 </div>
+
+
 <p>&copy; 2018 Bodonate<p>
+
+   <script>
+
+
+   </script>
 

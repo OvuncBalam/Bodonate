@@ -66,6 +66,14 @@
     <Compile Include="Migrations\201808070842169_emailpropadd.Designer.cs">
       <DependentUpon>201808070842169_emailpropadd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808071216135_MessageprobAdded.cs" />
+    <Compile Include="Migrations\201808071216135_MessageprobAdded.Designer.cs">
+      <DependentUpon>201808071216135_MessageprobAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808071249401_clearjunkdata.cs" />
+    <Compile Include="Migrations\201808071249401_clearjunkdata.Designer.cs">
+      <DependentUpon>201808071249401_clearjunkdata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Donater.cs" />
@@ -87,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808070842169_emailpropadd.resx">
       <DependentUpon>201808070842169_emailpropadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808071216135_MessageprobAdded.resx">
+      <DependentUpon>201808071216135_MessageprobAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808071249401_clearjunkdata.resx">
+      <DependentUpon>201808071249401_clearjunkdata.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
