@@ -118,9 +118,11 @@ namespace Bodonate.Web.Controllers
                 }
             }
 
-        public ActionResult UserRegister( )
+        public ActionResult UserRegister(  )
         {
-            return View();
+            UserModel addUser = new UserModel();
+
+            return View(addUser);
         }
 
         [HttpPost]
@@ -139,7 +141,7 @@ namespace Bodonate.Web.Controllers
             };
             UserRepo.AddUser(UserRegistered);
 
-            return View("UserRegister");
+            return RedirectToAction("Index", UserRegistered);
 
         }
     }

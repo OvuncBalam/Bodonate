@@ -1,79 +1,91 @@
-﻿@model   Bodonate.Web.Views.ViewModels.BodonateViewModel
+﻿@model  Bodonate.Web.Views.ViewModels.BodonateViewModel
 @{
-
-
     ViewBag.Title = "Index";
     Layout = null;
 }
-<h2 class="h1">Bodonate Anasayfa</h2>
+<link href="~/Content/RegisterStyle.css" rel="stylesheet" type="text/css" />
+<title>UserRegister</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Client Signup Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
 
-<div style="width:100%; height:120%;  float: left;    ">
+
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<link href="~/Content/Navigation.css" rel="stylesheet" id="bootstrap-css">
+
+<div style="display:inline-block; margin-top:0px; height:120%; width:100%;">
+
+
+        <div id="navigation" class="naviga">
+            <h2 class="bodo" >Bodonate Anasayfa </h2>
+            <h3 class="carbon" >&#64;CarbonSoft</h3>
+            <div class="nav1">
+
+                <div class="home">@Html.ActionLink("Home", "Index", "Bodonate", new { }, new { @class = "home" })</div>
+                <div class="home">@Html.ActionLink("Register", "UserRegister", "Bodonate", new { }, new { @class = "home" })</div>
+                <div class="home">Contact Us</div>
+            </div>
+        </div>
+        <div style="width:100%; height:70%;  float: left;  margin-top:10%;  ">
+
+
+            <div style="display:block; float: left;  width:70%; height:90%;">
 
 
 
-    <div style="display:inline-block; float: left;  width:70%; height:80%; border-style:solid; border:solid; border-color:white; border-right-color:deepskyblue; ">
+                <div style="display :inline-block; ">
 
 
-        <link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="~/Scripts/bootstrap.min.js"></script>
-        <script src="~/Scripts/jquery-1.11.1.min.js"></script>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <div id="imaginary_container">
-                        <div class="input-group stylish-input-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="input-group-addon">
-                                <button type="submit">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                </button>
-                            </span>
-                        </div>
+                    <div style="display :inline-block;  ">
+                        <img src="https://c1.staticflickr.com/9/8078/8314929977_28fd740070_b.jpg" style=" width:80%; height:100%; display:inline-block; margin-left:7%; margin-right:0%; margin-top:1%;" />
+                     
                     </div>
+
+                </div>
+            </div>
+
+            <div style="display:inline-block; float: left;  width:25%; height:80%; margin-left:2%;">
+                <div style="display:block;">
+                    <div style="width:3%; height:7%; float: left; display:inline-block; margin-top:5%; margin-left:35%;">1</div>
+                    <img style="width:10%; height:7%; display:inline-block; margin-top:5%; margin-left:1%;" src="~/Scripts/img/email.png" />
+                    <img id="Login" style="width:10%; height:7%; display:inline-block; margin-top:3%; margin-left:1%;" src="~/Scripts/img/user.png" />
+
+                    <div style="width:10%; height:5%; display:inline-block; margin-top:5%; margin-left:5%;">@Html.ActionLink("Login", "UserLogin", "Bodonate", new { }, null)</div>
+
+
+
+                </div>
+                <div style="display:block;">
+
+                    <div id="donateReq" style="display:block;  margin-top:20%; margin-left:15%; width:60%; height:7%; background-color:bisque;  border-style:solid; border:solid; border-color:chocolate; text-align:center;">Donate Request</div>
+
+                    <div id="ViewDemands" style="display:block;  margin-top:10%; margin-left:15%; width:60%; height:7%; background-color:bisque;  border-style:solid; border:solid; border-color:chocolate; text-align:center;">ViewDemands</div>
+                    <div style="display :inline-block; margin-top:20%; ">
+                        <div style="display :inline-block; width:20%; height:20%; margin-left:3%; margin-right:3% ">Who we are ?</div>
+                        <img width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFLnNJUrQMxmfpwDz4kLdRsyXzy4Oo83zHABwZRaQ4XGs6d2k1cw" style=" margin-left:2%; margin-top:2%;  display:inline-block;" />
+                        <div style="display:inline-block; margin-left:2%; width:10%; height:20%; margin-right:3%">Coming From You</div>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div style="display :inline-block; ">
-            <div style="display :inline-block;  ">
-                <img src="https://c1.staticflickr.com/9/8078/8314929977_28fd740070_b.jpg" style=" width:52%; height:65%; display:inline-block; margin-left:1%; margin-right:1%; margin-top:2%;" />
-                <img id="statistics" style=" width:43%; height:65%; display:inline-block;  margin-top:2%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO5K-ikyyn9wxjFF77i1HXSoW_hKpQL-03wScJj7_oHx48N_Q" />
-            </div>
-            <div style="display :inline-block;  ">
-                <div style="display :inline-block; width:20%; height:20%; margin-left:3%; margin-right:3% ">Who we are ?</div>
-                <img width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFLnNJUrQMxmfpwDz4kLdRsyXzy4Oo83zHABwZRaQ4XGs6d2k1cw" style=" margin-left:2%; margin-top:2%;  display:inline-block;" />
-                <div style="display:inline-block; margin-left:2%; width:20%; height:20%; margin-right:3%">Coming From You</div>
-            </div>
-        </div>
-    </div>
-
-    <div style="display:inline-block; float: left;  width:25%; height:80%; margin-left:2%;">
-        <div style="display:block;">
-            <div style="width:3%; height:5%; float: left; display:inline-block; margin-top:5%; margin-left:35%;">1</div>
-            <img style="width:10%; height:5%; display:inline-block; margin-top:5%; margin-left:1%;" src="~/Scripts/img/email.png" />
-            <img id="Login" style="width:10%; height:5%; display:inline-block; margin-top:3%; margin-left:1%;" src="~/Scripts/img/user.png" />
-
-            <div style="width:10%; height:5%; display:inline-block; margin-top:5%; margin-left:5%;">@Html.ActionLink("Login", "UserLogin", "Bodonate", new {}, null)</div>
-
+        <div style="display:block;   margin-top:0px; ">
+            <p style="display:inline-block; margin-top:0px;">&copy; 2018 Bodonate</p>
+            <img src="~/Scripts/img/logo.png" style="margin-left:80%; width:10%; height:17%; display:inline-block; margin-top:0px; " />
 
 
         </div>
-        <div style="display:block;">
-
-            <div id ="donateReq"style="display:block;  margin-top:20%; margin-left:15%; width:60%; height:7%; background-color:bisque;  border-style:solid; border:solid; border-color:chocolate; text-align:center;">Donate Request</div>
-
-            <div id="ViewDemands" style="display:block;  margin-top:10%; margin-left:15%; width:60%; height:7%; background-color:bisque;  border-style:solid; border:solid; border-color:chocolate; text-align:center;">ViewDemands</div>
+    
 
 
-        </div>
-    </div>
 </div>
-
-
-<p>&copy; 2018 Bodonate<p>
-
-   <script>
-
-
-   </script>
 

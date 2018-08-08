@@ -97,6 +97,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Navigation.css" />
     <Content Include="Content\RegisterStyle.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -105,6 +106,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\img\email.png" />
+    <Content Include="Scripts\img\logo.png" />
     <Content Include="Scripts\img\RegisterBackground.jpg" />
     <Content Include="Scripts\img\user.png" />
     <Content Include="Scripts\jquery-1.10.2.js" />
