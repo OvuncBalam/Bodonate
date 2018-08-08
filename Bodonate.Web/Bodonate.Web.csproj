@@ -97,6 +97,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\RegisterStyle.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -104,6 +105,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\img\email.png" />
+    <Content Include="Scripts\img\RegisterBackground.jpg" />
     <Content Include="Scripts\img\user.png" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -131,9 +133,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Bodonate\Index.cshtml" />
-    <Content Include="Views\Bodonate\NewBook.cshtml" />
+    <Content Include="Views\Bodonate\DonateBook.cshtml" />
     <Content Include="Views\Bodonate\Update.cshtml" />
     <Content Include="Views\Bodonate\UserLogin.cshtml" />
+    <Content Include="Views\Bodonate\UserRegister.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

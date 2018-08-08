@@ -24,7 +24,7 @@ namespace Bodonate.Web.Controllers
 
 
 
-        public ActionResult NewBook()
+        public ActionResult DonateBook()
         {
             var model = new BookModel();
 
@@ -118,6 +118,11 @@ namespace Bodonate.Web.Controllers
                 }
             }
 
+        public ActionResult UserRegister( )
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult UserRegister(UserModel user)
         {
@@ -134,7 +139,7 @@ namespace Bodonate.Web.Controllers
             };
             UserRepo.AddUser(UserRegistered);
 
-            return RedirectToAction("Index");
+            return View("UserRegister");
 
         }
     }

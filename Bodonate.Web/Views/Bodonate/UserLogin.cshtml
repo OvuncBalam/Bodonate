@@ -9,9 +9,7 @@
 
     Layout = null;
 }
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
 
 @using (Html.BeginForm("Index", "Bodonate", FormMethod.Post))
 {
@@ -41,30 +39,4 @@
 
 }
 
-@using (Html.BeginForm("UserLogin", "Bodonate", FormMethod.Post,
-                                      new { enctype = "multipart/form-data" }))
-{
-    @Html.LabelFor(model => model.Username)
-
-
-    @Html.TextBoxFor(model => model.Username)
-
-
-    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
-
-
-
-    @Html.LabelFor(model => model.Password)
-
-
-    @Html.TextBoxFor(model => model.Password)
-    @Html.ValidationMessageFor(model => model.Password, "",new { @class = "text-danger" })
-
-
-
-
-
-    <input type="submit" value="Login" />
-
-}
 
