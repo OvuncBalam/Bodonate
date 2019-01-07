@@ -39,18 +39,20 @@ namespace Bodonate.DAL.Repositories
 
             }
         }
-        public static void UpdateUser(int Id,User User)
+        public static void UpdateUser(string userName,User User)
         {
             using (BodonateDbContext db = new BodonateDbContext())
             {
 
-                var UserToBeUpdated = db.Users.SingleOrDefault(u => u.Id == Id);
+                var UserToBeUpdated = db.Users.SingleOrDefault(u => u.Username == userName);
                 UserToBeUpdated.Name = User.Name;
                 UserToBeUpdated.SurName = User.SurName;
                 UserToBeUpdated.Password = User.Password;
                 UserToBeUpdated.Username = User.Username;
                 UserToBeUpdated.Transfers = User.Transfers;
                 UserToBeUpdated.Confirmpassword = User.Email;
+
+
                 db.SaveChanges();
 
             }

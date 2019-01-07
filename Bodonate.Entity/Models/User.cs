@@ -19,7 +19,9 @@ namespace Bodonate.Entity.Models
         public string Confirmpassword { get; set; }
         public string Email { get; set; }
 
+        public List<comments> comments { get; set; }
         public List<Transfer> Transfers { get; set; }
-
+        public List<Requester> RegsForUser { get; set; }
+        public List<RequestFor> RequestFors { get; set; }
     }
 }

@@ -99,20 +99,25 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Navigation.css" />
     <Content Include="Content\RegisterStyle.css" />
+    <Content Include="Content\Requests.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Badonate - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\img\email.png" />
+    <Content Include="Scripts\img\kids.png" />
     <Content Include="Scripts\img\logo.png" />
     <Content Include="Scripts\img\RegisterBackground.jpg" />
     <Content Include="Scripts\img\user.png" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -122,11 +127,15 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\ViewModels\BodonateViewModel.cs" />
+    <Compile Include="Views\ViewModels\BookListModel.cs" />
     <Compile Include="Views\ViewModels\BookModel.cs" />
+    <Compile Include="Views\ViewModels\RequesterModel.cs" />
     <Compile Include="Views\ViewModels\UserModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -139,6 +148,8 @@
     <Content Include="Views\Bodonate\Update.cshtml" />
     <Content Include="Views\Bodonate\UserLogin.cshtml" />
     <Content Include="Views\Bodonate\UserRegister.cshtml" />
+    <Content Include="Views\Bodonate\ViewRequests.cshtml" />
+    <Content Include="Views\Bodonate\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

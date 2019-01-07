@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Bodonate.DAL.Repositories
 {
     class RequesterRepo
-    {
+    {/*
         public static List<Requester> GetAllRequesters()
         {
             using (BodonateDbContext db = new BodonateDbContext())
@@ -24,7 +24,7 @@ namespace Bodonate.DAL.Repositories
         {
             using (BodonateDbContext db = new BodonateDbContext())
             {
-                db.Requesters.Add(requester);
+               db.Requesters.Add(requester);
                 db.SaveChanges();
             }
 
@@ -44,11 +44,11 @@ namespace Bodonate.DAL.Repositories
             {
                 var RequesterToBeUpdated = db.Requesters.SingleOrDefault(r => r.Id == Id);
                 RequesterToBeUpdated.Name = requester.Name;
-                RequesterToBeUpdated.UserId = requester.UserId;
+             //   RequesterToBeUpdated.UserId = requester.UserId;
                 RequesterToBeUpdated.UserRequesting = requester.UserRequesting;
                 db.SaveChanges();
             }
 
-        }
+        }*/
     }
 }

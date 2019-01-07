@@ -1,0 +1,177 @@
+﻿@model  IEnumerable<Bodonate.Entity.Models.RequestFor>
+@{
+    ViewBag.Title = "ViewRequests";
+    Layout = null;
+}
+
+<link href="~/Content/RegisterStyle.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Client Signup Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<style>
+
+    .messages {
+        width: 40%;
+        padding-top: 5px;
+        height: 40%;
+        display: inline-table;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .comment {
+        display: block;
+    }
+
+    .mes {
+        color: wheat;
+        margin-left: 2%;
+        width: 70%;
+        height: 15%;
+        padding-left: 5px;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<link href="/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="/Scripts/bootstrap.min.js"></script>
+<script src="/Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+
+<link href="/Content/Navigation.css" rel="stylesheet" id="bootstrap-css">
+<link href="/Content/Requests.css" rel="stylesheet" />
+<div style="display:inline-block; margin-top:0px; height:120%; width:100%;">
+
+
+    <div id="navigation" class="naviga">
+        <p class="bodo">Bodonate Anasayfa </p>
+        <p class="carbon">&#64;CarbonSoft</p>
+        <div class="nav1">
+
+            <div class="home">@Html.ActionLink("Anasayfa", "Index", "Bodonate", new {/*id=Model.UserName*/}, new { @class = "home" })</div>
+            <div class="home">@Html.ActionLink("Kayıt", "UserRegister", "Bodonate", new {/*id=Model.UserName*/}, new { @class = "home" })</div>
+            <div class="home">@Html.ActionLink("İletişim", "Contact", "Bodonate", new { }, new { @class = "home" })</div>
+        </div>
+    </div>
+
+    @using (Html.BeginForm("ViewRequests", "Bodonate", FormMethod.Post))
+    {
+        <div class="Regs">
+            <!-- //foreach (var item in Model) {  }-->
+
+
+
+            @foreach (var item in Model)
+            {
+                <div class="main main-agilerow messages">
+
+
+                    <div class="request">
+
+
+                        <p class="from">From : <a class="from-name">@item.User.Username</a></p>
+
+                        <p class="messageHead">Message  :</p>
+                        <p class="message">@item.Message</p>
+                        @for (int i = 0; i < item.Genres.Count; i++)
+                        {
+
+                            @Html.DisplayFor(k => item.Genres[i].Name)
+
+                        }
+
+                        <div onclick="yorum('@item.User.Username') " class="btn btn-danger">Yorum Yap</div>
+
+                        <div id='@item.User.Username' class="main" style="display:none;">
+
+                            @for (int j = 0; j < item.CommentsForUsers.Count; j++)
+                            {
+                                <div style="color:black; margin-bottom:-20px;">@item.CommentsForUsers[j].user.Name :</div>
+                                <div class="main-agilerow mes">@item.CommentsForUsers[j].Message</div>
+
+                            }
+
+                                <div style="margin-top:-15px; margin-left:150px;" >
+                                    @Html.TextBoxFor(k => item.Message, new { @Value = "yorum" })
+                                    <input type="submit" value="Gönder" class="btn btn-danger" style="margin-right:-60px;">
+                                </div>
+                       
+
+
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+
+
+        </div>}
+</div>
+
+<script>
+
+    function yorum(username) {
+        var comments = document.getElementById(username);
+
+        if (comments.style.display == 'none') {
+
+            comments.style.display = 'block';
+            parent = comments.parentNode.parentNode;
+            parent.style.height = "70%";
+
+        }
+        else {
+            comments.style.display = 'none';
+            parent = comments.parentNode.parentNode;
+            parent.style.height = "40%";
+
+        }
+
+
+
+
+    }
+
+</script>
+
+
+
+
+<script type="text/javascript">
+    function send(id) {
+      
+       
+        debugger
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: "/Bodonate/ViewRequests",
+            contentType: "application/json; charset=utf-8",
+
+            data: '{Name: "' + id + '" }',
+            success: function () {
+
+
+
+
+            }
+
+
+        })
+
+    }
+
+
+</script>

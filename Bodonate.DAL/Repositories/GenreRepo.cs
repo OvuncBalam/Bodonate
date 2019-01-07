@@ -19,6 +19,7 @@ namespace Bodonate.DAL.Repositories
         {
             using (BodonateDbContext db = new BodonateDbContext())
             {
+                
                 db.Genres.Add(Genre);
                 db.SaveChanges();
              
@@ -34,16 +35,18 @@ namespace Bodonate.DAL.Repositories
 
             }
         }
-        public static void UpdateGenre(int Id,Genre Genre)
+        public static void UpdateGenre(string userName, Genre Genre)
         {
             using (BodonateDbContext db = new BodonateDbContext())
             {
-                var GenreToBeUpdated = db.Genres.SingleOrDefault(g => g.Id == Id);
+                var GenreToBeUpdated = db.Genres.SingleOrDefault(g => g.User.Username == userName);
                 GenreToBeUpdated.Name = Genre.Name;
                 GenreToBeUpdated.Id = Genre.Id;
+                GenreToBeUpdated.Checked = Genre.Checked;
+                GenreToBeUpdated.Message = Genre.Message;
+                db.SaveChanges();
 
-                
-               
+
 
             }
         }

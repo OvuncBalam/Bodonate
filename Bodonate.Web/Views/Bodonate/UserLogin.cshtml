@@ -3,7 +3,6 @@
     ViewBag.Title = "UserLogin";
     Layout = null;
 }
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 
 <link href="~/Content/RegisterStyle.css" rel="stylesheet" type="text/css" />
@@ -18,13 +17,6 @@
 <link href="//fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
 
-
-
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="~/Scripts/bootstrap.min.js"></script>
-<script src="~/Scripts/jquery-1.11.1.min.js"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" href="~/Content/Navigation.css">
 <link href="~/Content/RegisterStyle.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/Navigation.css" rel="stylesheet" id="bootstrap-css">
@@ -35,46 +27,50 @@
 
 
     <div id="navigation" class="naviga">
-        <h2 class="bodo">Bodonate Anasayfa </h2>
-        <h3 class="carbon">&#64;CarbonSoft</h3>
+        <p class="bodo">Bodonate Anasayfa </p>
+        <p class="carbon">&#64;CarbonSoft</p>
         <div class="nav1">
-
-            <div class="home">@Html.ActionLink("Home", "Index", "Bodonate", new { }, new { @class = "home" })</div>
-            <div class="home">@Html.ActionLink("Register", "UserRegister", "Bodonate", new { }, new { @class = "home" })</div>
-            <div class="home">Contact Us</div>
+            <div class="home">@Html.ActionLink("Anasayfa", "Index", "Bodonate", User, new { @class = "home" })</div>
+            <div class="home">@Html.ActionLink("Kayıt", "UserRegister", "Bodonate", new { }, new { @class = "home" })</div>
+            <div class="home">@Html.ActionLink("İletişim", "Contact", "Bodonate", new { }, new { @class = "home" })</div>
         </div>
     </div>
 
-  
-        @using (Html.BeginForm("Index", "Bodonate", FormMethod.Post))
-        {
-         
 
-            <div class="main main-agileits" style="height:60%; width:30%; margin-top:6%; margin-left: 35%;">
+    @using (Html.BeginForm("UserLogin", "Bodonate", FormMethod.Post))
+    {
 
-                <div class="main-agilerow" style="height:100%; width:100%; ">
-                    <div class="signup-wthreetop">
-                        <h2> User Login</h2>
-    
-                    </div>
-                    <div class="contact-wthree">
-                        <form action="#" method="post">
-                            <h3>Login :</h3>
-                            <div class="form-w3step1">
 
-                                <div class="edit-form">   @Html.TextBoxFor(model => model.Username, htmlAttributes: new { @class = " email agileits-btm edit-form", @placeholder = "Username", @requried = "required" })</div>
+        <div class="main main-agileits" style="height:60%; width:30%; margin-top:6%; margin-left: 35%;">
 
-                                <div class="edit-form">   @Html.TextBoxFor(model => model.Password, htmlAttributes: new { @class = "email agileits-btm edit-form", @placeholder = "Password", @requried = "required" })</div>
-                            </div>
-                            <input type="submit" value="SUBMIT">
-                        </form>
-                    </div>
+            <div class="main-agilerow" style="height:100%; width:100%; ">
+                <div class="signup-wthreetop">
+                    <h2> Kullanıcı Girişi</h2>
+
                 </div>
+                <div class="contact-wthree">
+                    <form action="#" method="post">
+                        <h3>Giriş :</h3>
+                        <div class="form-w3step1">
+
+                            <div class="edit-form">   @Html.TextBoxFor(Model => Model.Username, htmlAttributes: new { @class = " email agileits-btm edit-form", @placeholder = "Kullanıcı Adı", @requried = "required" })</div>
+
+                            <div class="edit-form">   @Html.TextBoxFor(Model => Model.Password, htmlAttributes: new { @class = "email agileits-btm edit-form", @placeholder = "Şifre", @requried = "required" })</div>
+                        </div>
+                        <input type="submit" value="GİRİŞ"> 
+
+                    </form>  
+                    
+                </div>
+
+              
             </div>
 
-
-        }
-
-
-
         </div>
+
+
+    }
+
+
+
+</div>

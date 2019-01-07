@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BodonateDb-Web.config Connection String" description="BodonateDb Veritabanına erişmek için uygulama tarafından web.config'de kullanılan Bağlantı Dizesi." defaultValue="Server=tcp:badonatedb.database.windows.net,1433;Initial Catalog=BadonateDB;Persist Security Info=False;User ID=Badonate;Password=Admin_123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\msoft2275\\Desktop\\b\\Bodonate\\Bodonate\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BodonateDb']/@connectionString" />
+  </parameter>
+</parameters>

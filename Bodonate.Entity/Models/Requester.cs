@@ -10,9 +10,11 @@ namespace Bodonate.Entity.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public User UserRequesting { get; set; }
         public int UserId { get; set; }
-        public string Message;
+        public string Message { get; set; }
 
+        public User User { get; set; }
+        public List<Genre> Genres { get; set; }
+        public List<comments> CommentsForUsers { get; set; }
     }
 }
